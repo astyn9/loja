@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{padding: 0;
+margin:0;
+list-style: none;
+text-decoration: none;
+box-sizing: border-box;}
+
+html{scroll-behavior: smooth;}
+
+body{
+    font-family: Montserrat;
+}
+
+.header {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    z-index: 3;
+    top: 0;
+    left: 0;
+  
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: rgb(156, 148, 148);
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #ffffff;
+    color: rgb(2, 2, 2);
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-weight: 600;
+    font-size: 2.2em;
+    padding: 10px 20px;
+    color: rgb(42, 42, 44);
+    text-decoration: none;
+  }
+  
+  
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+
+
+header h1{margin-left: 40px;}
+
+nav a{margin-right: 80px;
+color: black;}
+
+.tela-principal{background: linear-gradient(rgba(24, 24, 24, 0.507), rgba(24, 24, 24, 0.527)), url(/imagens/Mask\ Group.png);
+padding: 70px;
+
+background-size: cover;}
+
+
+.tela-principal h1{width: 400px;
+font-weight: 700;
+font-size: 32px;
+color:rgba(249, 249, 249, 1);
+margin-bottom: 50px;
+margin-top: 50px;}
+
+.tela-principal p{width: 460px;
+font-weight: 600;
+font-size: 18px;
+color: rgba(249, 249, 249, 1);
+margin-bottom: 50px;}
+
+.item{background-color: rgba(235, 233, 234, 1);
+cursor: pointer;}
+
+.owl-carousel{padding: 20px;}
+
+.destaques{display: flex;
+flex-direction: column;}
+
+
+
+.destaques h1{text-align: center;
+font-size: 32px;
+font-weight: 600;
+padding: 20px;
+margin-top: 50px;
+color: rgba(24, 24, 24, 1);}
+
+.destaques p{text-align: center;
+font-size: 18px;
+font-weight: 500;
+padding: 20px;
+color: rgba(71, 71, 71, 1);}
+
+.destaques article{display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+.tenis{background-color: rgba(235, 233, 234, 1);
+margin: 20px;}
+
+.tenis img{object-fit: cover;}
+
+.tenis img:hover{filter: opacity(40%);
+    cursor: pointer;
+    transition: 0.8s;}
+
+
+.promoçoes{display: flex;
+    flex-direction: column;}
+    
+    
+    
+    .promoçoes h1{text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 50px;
+    padding: 20px;
+    color: rgba(24, 24, 24, 1);}
+    
+    .promoçoes p{text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px;
+    color: rgba(71, 71, 71, 1);}
+
+
+    .promoçoes article{display: flex;
+    flex-wrap: wrap;
+justify-content: space-evenly;}
+
+.mini-imagem img:hover{filter: opacity(40%);
+    cursor: pointer;
+    transition: 0.8s;}
+
+    .img-principal img:hover{filter: opacity(40%);
+        cursor: pointer;
+        transition: 0.8s;}
+
+.img-principal{display: flex;
+flex-direction: column;
+
+}
+
+.img-principal img{margin: 20px;
+    background-color: rgba(235, 233, 234, 1);
+object-fit: cover;}
+
+.mini-imagem{display: flex;
+flex-direction: column;}
+
+.mini-imagem img{margin: 20px;
+    background-color: rgba(235, 233, 234, 1);
+object-fit: cover;}
+
+footer{background: linear-gradient(rgba(24, 24, 24, 0.507), rgba(24, 24, 24, 0.527)), url(/imagens/Mask\ Group.png);
+    padding: 50px;
+background-size: cover;
+display: flex;
+flex-direction: column;
+align-items: center;
+line-height: 2.0;}
+
+
+
+footer h1{text-align: center;
+color: white;
+padding: 20px;}
+
+footer p{text-align: center;
+color: white;
+padding: 20px;}
+
+input{font-size: 18px;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid;
+    border-top: none;
+    border-left: none;
+    width: 170px;
+    outline: none;
+    border-right: none;
+}
+
+::-webkit-input-placeholder{
+    color: rgb(255, 255, 255);
+}
+
+footer button{width: 118px;
+height: 38px;
+background-color: rgba(15, 154, 254, 1);
+border:none;
+border-radius: 50px;
+cursor:pointer;
+color: #FFFFFF;}
+
+
+
+@media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  
+   
+  }
+
+  @media only screen and (max-width:700px){
+
+ 
+   
+        
+       .tela-principal{width: 100%;
+    background-size:cover;
+background-position: center center;}
+
+       .tela-principal h1{width: 100%;}
+
+       .tela-principal p{width: 100%;}
+
+      input{width:50%;}
+   
+  }
